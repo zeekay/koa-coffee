@@ -1,5 +1,7 @@
+# Wrap non-generator function(s) so they can be used safely across koa
 wrap = (fn) ->
-  return (wrap f for f in fn) if Array.isArray fn
+  if Array.isArray fn
+    return (wrap f for f in fn)
 
   if 'GeneratorFunction' == fn.constructor.name
     fn
