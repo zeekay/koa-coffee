@@ -2,7 +2,7 @@
 Wrap non-generator functions so that koa middleware can be written more
 succintly in CoffeeScript (and JavaScript). Drop-in replacement for koa.
 
-As an added-bonus, included drop-in replacement for koa-router as well.
+As an added bonus, includes a drop-in replacement for koa-router as well.
 
 ## Usage
 ```coffeescript
