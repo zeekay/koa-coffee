@@ -1,6 +1,6 @@
 {
   "name": "koa-coffee",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Drop-in replacement for koa. Idiomatic koa for coffee lovers.",
   "main": "lib/",
   "scripts": {
