@@ -5,6 +5,9 @@ succintly in CoffeeScript (and JavaScript). Drop-in replacement for koa.
 As an added bonus, includes a drop-in replacement for koa-router as well.
 
 ## Usage
+Require `koa-coffee/koa` wherever you want to use koa. `koa-coffee/router` is
+aliased to a patched koa-router as well.
+
 ```coffeescript
 app    = do require 'koa-coffee/koa'
 router = do require 'koa-coffee/router'
@@ -14,7 +17,7 @@ router.get '/foo', ->
   @body = 'foo'
   yield return
 
-# ...but it's no longer necessary!
+# ...that is no longer necessary
 router.get '/bar', ->
   @body = 'bar'
 
@@ -23,5 +26,4 @@ app
   .use(router.allowedMethods())
 
 app.listen 3000
-
 ```
