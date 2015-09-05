@@ -19,6 +19,11 @@ router.get '/foo', ->
   @body = 'foo'
   yield return
 
+# ...or
+router.get '/foo', (next) ->
+  @body = 'foo'
+  yield next
+
 # ...that is no longer necessary
 router.get '/bar', ->
   @body = 'bar'
