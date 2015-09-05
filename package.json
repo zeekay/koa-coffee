@@ -1,28 +1,27 @@
 {
-  "name": "akasha",
+  "name": "koa-coffee",
   "version": "0.0.1",
-  "description": "Store the ethereal.",
+  "description": "Drop-in replacement for koa. Idiomatic koa for coffee lovers.",
   "main": "lib/",
-  "bin": "bin/akasha",
   "scripts": {
     "prepublish": "cake build-min",
     "test": "cake test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zeekay/akasha"
+    "url": "https://github.com/zeekay/koa-coffee"
   },
   "author": "Zach Kelling <zach@zeekay.io> (http://zeekay.io)",
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/zeekay/akasha/blob/master/LICENSE"
+      "url": "https://github.com/zeekay/koa-coffee/blob/master/LICENSE"
     }
   ],
   "bugs": {
-    "url": "https://github.com/zeekay/akasha/issues"
+    "url": "https://github.com/zeekay/koa-coffee/issues"
   },
-  "homepage": "https://github.com/zeekay/akasha#readme",
+  "homepage": "https://github.com/zeekay/koa-coffee#readme",
   "devDependencies": {
     "chai": "^3.2.0",
     "coffee-script": "^1.10.0",
@@ -30,5 +29,8 @@
     "mocha": "^2.3.0",
     "postmortem": "^0.1.8",
     "shortcake": "^0.2.4"
+  },
+  "dependencies": {
+    "koa": "^1.0.0"
   }
 }

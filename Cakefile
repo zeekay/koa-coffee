@@ -9,14 +9,20 @@ task 'clean', 'clean project', (options) ->
 
 task 'build', 'build project', (options) ->
   exec 'node_modules/.bin/coffee -bcm -o lib/ src/'
+  exec 'node_modules/.bin/coffee -bc -o . src/koa.coffee'
+  exec 'node_modules/.bin/coffee -bc -o . src/router.coffee'
   exec 'node_modules/.bin/coffee -bcm -o .test/ test/'
 
 task 'build-min', 'build project', (options) ->
+  exec 'node_modules/.bin/coffee -bc -o . src/koa.coffee'
+  exec 'node_modules/.bin/coffee -bc -o . src/router.coffee'
   exec 'node_modules/.bin/coffee -bc -o lib/ src/'
 
 task 'watch', 'watch for changes and recompile project', ->
   exec 'node_modules/.bin/coffee -bcmw -o lib/ src/'
   exec 'node_modules/.bin/coffee -bcmw -o .test test/'
+  exec 'node_modules/.bin/coffee -bcw -o . src/koa.coffee'
+  exec 'node_modules/.bin/coffee -bcw -o . src/router.coffee'
 
 task 'test', 'run tests', (options) ->
   invoke 'build', ->
