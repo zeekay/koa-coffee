@@ -1,4 +1,6 @@
 # koa-coffee
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/zeekay/koa-coffee.svg)](https://greenkeeper.io/)
 Wrap non-generator functions so that koa middleware can be written more
 succintly in CoffeeScript (and JavaScript). Drop-in replacement for
 [koa](https://github.com/koajs/koa).
