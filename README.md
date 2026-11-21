@@ -1,4 +1,7 @@
 # koa-coffee
+
+[![Open in Hanzo](https://hanzo.app/badges/open-in-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/zeekay/koa-coffee&ref=master&action=open) [![Edit with Hanzo](https://hanzo.app/badges/edit-with-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/zeekay/koa-coffee&ref=master&action=edit)
+
 Wrap non-generator functions so that koa middleware can be written more
 succintly in CoffeeScript (and JavaScript). Drop-in replacement for
 [koa](https://github.com/koajs/koa).
